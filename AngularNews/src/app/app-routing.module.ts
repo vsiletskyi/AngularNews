@@ -1,11 +1,20 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { SportComponent } from "./sport/sport.component";
+import { ScienceComponent } from "./science/science.component";
+import { TechnologyComponent } from "./technology/technology.component";
+import { EntertainmentComponent } from "./entertainment/entertainment.component";
+import { from } from "rxjs";
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  { path: "sport", component: SportComponent },
+  { path: "science", component: ScienceComponent },
+  { path: "technology", component: TechnologyComponent },
+  { path: "entertainment", component: EntertainmentComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
