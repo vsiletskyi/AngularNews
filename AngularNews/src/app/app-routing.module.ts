@@ -4,7 +4,6 @@ import { SportComponent } from "./sport/sport.component";
 import { ScienceComponent } from "./science/science.component";
 import { TechnologyComponent } from "./technology/technology.component";
 import { EntertainmentComponent } from "./entertainment/entertainment.component";
-import { from } from "rxjs";
 
 const routes: Routes = [
   { path: "sport", component: SportComponent },
